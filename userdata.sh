@@ -7,10 +7,10 @@ sudo apt install -y docker.io git ruby wget unzip
 sudo apt install -y openjdk-17-jdk
 
 # JAVA_HOME 설정
-echo 'export JAVA_HOME="/usr/lib/jvm/java-1.17.0-openjdk-amd64"' >> home/ubuntu/.bashrc
-echo "export PATH=$PATH:$JAVA_HOME/bin" >> home/ubuntu/.bashrc
+echo 'export JAVA_HOME="/usr/lib/jvm/java-1.17.0-openjdk-amd64"' >> /home/ubuntu/.bashrc
+echo "export PATH=$PATH:$JAVA_HOME/bin" >> /home/ubuntu/.bashrc
 
-source home/ubuntu/.bashrc
+source /home/ubuntu/.bashrc
 
 cd /home/ubuntu
 
