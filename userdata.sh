@@ -15,12 +15,11 @@ source /home/ubuntu/.bashrc
 
 # codedeploy-agent 설치
 wget https://aws-codedeploy-ap-northeast-2.s3.amazonaws.com/latest/install
-chmod u+x ./install
+sudo chmod u+x ./install
 sudo ./install auto
-sudo service codedeploy-agent status
-rm -rf ./install
+sudo rm -rf ./install
 
-cat >/etc/init.d/codedeploy-start.sh <<EOL
+sudo cat >/etc/init.d/codedeploy-start.sh <<EOL
 #!/bin/bash
 sudo service codedeploy-agent restart
 EOL
